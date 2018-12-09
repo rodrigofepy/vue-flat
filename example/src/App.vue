@@ -1,15 +1,17 @@
 <template>
   <div id="app">
     <tag-component text="example text"></tag-component>
+    <btn />
   </div>
 </template>
 
 <script>
-import { tagComponent } from '../../src/index'
+import { tagComponent, btn } from '../../src/index'
 export default {
   name: 'app',
   components: {
-    tagComponent
+    tagComponent,
+    btn
   }
 }
 </script>

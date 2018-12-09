@@ -1,0 +1,107 @@
+// <----------- Variables ----------->
+
+// <----------- Color System ----------->
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$grays: () !default;
+// <----------- Removing the dollar sign ----------->
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+
+$primary:         #2eeef4 !default;
+$primary-light:   #4bf1f7 !default;
+$primary-lighter: #87f1f4 !default;
+$primary-dark:    #3fbed6 !default;
+$primary-darker:  #287288 !default;
+$warning:         #ffff00 !default;
+$danger:          #fe0065 !default;
+$success:         #01e172 !default;
+$link:            #0408fe !default;
+$info:            #0267fc !default;
+$violet:          #e325e9 !default;
+$violet-light:    #f751d3 !default;
+$violet-dark:     #ad318c !default;
+$purple:          #8088be !default;
+$purple-light:    #9ea4cc !default;
+$purple-dark:     #47508A !default;
+$wine:            #b6143b !default;
+$wine-light:      #c21b40 !default;
+$wine-dark:       #911230 !default;
+$orange:          #ff1919 !default;
+$orange-light:    #ff592b !default;
+$orange-dark:     #ee3c19 !default;
+$blue:            #007bff !default;
+$indigo:          #6610f2 !default;
+$pink:            #e83e8c !default;
+$red:             #dc3545 !default;
+$yellow:          #ffc107 !default;
+$green:           #28a745 !default;
+$teal:            #20c997 !default;
+$cyan:            #17a2b8 !default;
+$space:           #233c5d !default;
+$space-light:     #287288 !default;
+$space-dark:      #222243 !default;
+
+$colors: () !default;
+// <----------- Removing the dollar sign ----------->
+$colors: map-merge(
+  (
+    "primary":          $primary,              
+    "primary-light":    $primary-light,  
+    "primary-lighter":  $primary-lighter,
+    "primary-dark":     $primary-dark,    
+    "primary-darker":   $primary-darker,
+    "warning":          $warning,              
+    "danger":           $danger,                
+    "success":          $success,              
+    "link":             $link,                    
+    "info":             $info,                    
+    "violet":           $violet,                
+    "violet-light":     $violet-light,     
+    "violet-dark":      $violet-dark,      
+    "purple":           $purple,                
+    "purple-light":     $purple-light,     
+    "purple-dark":      $purple-dark,       
+    "wine":             $wine,                    
+    "wine-light":       $wine-light,        
+    "wine-dark":        $wine-dark,          
+    "orange":           $orange,                
+    "orange-light":     $orange-light,      
+    "orange-dark":      $orange-dark,        
+    "blue":             $blue,                    
+    "indigo":           $indigo,                
+    "pink":             $pink,                    
+    "red":              $red,                      
+    "yellow":           $yellow,                
+    "green":            $green,                  
+    "teal":             $teal,                    
+    "cyan":             $cyan,                    
+    "space":            $space,                  
+    "space-light":      $space-light,  
+    "space-dark":       $space-dark
+  ),
+  $colors
+);
