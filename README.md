@@ -85,6 +85,40 @@ Usa los siguientes prefijos para nombrar tus commits de acuerdo a los cambios qu
 
 [MERGE] para commit de fusión (solo para forward / back-port)
 
-### Colaboradores
+# Cómo usar el Entorno de desarrollo
 
-#### Documentación
+Para comenzar a utilizar el entorno de desarrollo primero debes realizar un **Fork** al repositorio del perfil de tu referente (cada referente hará un fork del repositorio oficial). Para esto deberás loguearte en GitHub y verás que en la parte superior derecha hay un botón con la opción Fork, presiónalo y con esto empezaras a realizar un Fork de ese repositorio hacia tu cuenta de GitHub.
+
+Luego, desde la terminal,  deberás clonar tu repositorio forked y nombrar a la carpeta que almacenará tu proyecto con la siguiente instrucción:
+```
+$ git clone https://github.com/User/vue-flat.git my-proyect
+```
+Una vez clonado tu nuevo repositorio, ingresa a la carpeta my-proyect:
+```
+$ cd my-proyect
+```
+y agrega la URL del repositorio original del proyecto a tu repositorio local:
+```
+$ git remote add upstream https://github.com/User/RepoOriginal(Forkeado)
+```
+Con esto le estarás indicando a git que agregue la siguiente ubicación remota y la llamas **upstream**. (Upstream es un término en inglés que se puede interpretar como “principal” o “producción”, solo se usa por estándar).
+Puede comprobarlo con el siguiente comando:
+```
+$ git remote –v
+```
+Ahora ya estás listo para actualizar tu repositorio desde la ubicación remota:
+```
+$ git fetch upstream
+```
+Una vez actualizado, los archivos y commits que agregues deberás unirlos a la **rama develop**, que es la rama que usaras para desarrollar. Para crear esta rama  deberás usar la opción "checkout" de git:
+```
+$ git checkout -b develop
+```
+El siguiente paso es unir estos cambios a la rama Master. Para esto primero asegúrate que estas ubicado en la rama Master con el siguiente comando:
+```
+$ git checkout master
+```
+Resolve los conflictos de git que se puedan presentar. Una vez que estas en la rama Master fusiona  los cambios:
+```
+$ git merge develop
+```
