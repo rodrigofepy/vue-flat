@@ -1,7 +1,7 @@
 export default {
   name: 'vflat-footer',
   components: {},
-  props: ['fixed'],
+  props: ['fixed', 'color'],
   data () {
     return {
     }

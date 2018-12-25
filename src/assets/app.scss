@@ -1,5 +1,3 @@
-$primary: #00d1b2;
-$black: #333;
 @import './main';
 
 .is-primary {
@@ -11,6 +9,14 @@ $black: #333;
 
 .is-black {
   background-color: $black;
+
+  a, p, span, h1, h2 {
+    color: white;
+  }
+}
+
+.is-green {
+  background-color: $teal;
 
   a, p, span, h1, h2 {
     color: white;
