@@ -1,0 +1,14 @@
+@import '../../assets/app';
+
+footer{
+	text-align:center;
+	color: $white;
+	padding: 0.8rem;
+}
+
+.fixed {
+	position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
