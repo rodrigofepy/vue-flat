@@ -1,7 +1,16 @@
 export default {
   name: 'vflat-footer',
   components: {},
-  props: ['fixed', 'color'],
+  props: {
+    fixed: {
+      type: Boolean,
+      default: false
+    },
+    color: {
+      type: String,
+      default: 'is-green'
+    }
+  },
   data () {
     return {
     }
