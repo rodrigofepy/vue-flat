@@ -2,7 +2,7 @@
   <div id="app">
     <tag-component text="example text"></tag-component>
     <btn />
-    <vflat-footer fixed="true">
+    <vflat-footer :fixed="true">
       Vue Flat Footer
     </vflat-footer>
   </div>
